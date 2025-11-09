@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وزارة التربية والتعليم - بطاقة التقرير الشهري</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 100%);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: right;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Header and Logo */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #1a472a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        .header img {
+            max-width: 150px; /* Increased size for the MOE logo */
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .header-text h1 {
+            color: #1a472a;
+            font-size: 32px;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .header-text h2 {
+            color: #2d5f3f;
+            font-size: 20px;
+            margin: 8px 0 0;
+            font-weight: 400;
+        }
+
+        .header-text p {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+
+        /* Search Form */
+        .search-section {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-left: 5px solid #1a472a;
+        }
+
+        .search-section label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #1a472a;
+            font-size: 16px;
+        }
+
+        .search-section input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #81c784;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            text-align: right;
+            transition: border-color 0.3s;
+        }
+
+        .search-section input[type="text"]:focus {
+            outline: none;
+            border-color: #1a472a;
+            background-color: #f1f8f6;
+        }
+
+        .search-section button {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .search-section button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(26, 71, 42, 0.3);
+        }
+
+        .search-section button:active {
+            transform: translateY(0);
+        }
+
+        /* Report Card Display */
+        #report-card {
+            border: 2px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 10px;
+            display: none;
+            background-color: #fafafa;
+        }
+
+        .student-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: linear-gradient(135deg, #f1f8f6 0%, #e8f5e9 100%);
+            border-radius: 8px;
+            border-right: 5px solid #4caf50;
+        }
+
+        .student-info div {
+            font-size: 16px;
+        }
+
+        .student-info span {
+            font-weight: 700;
+            color: #1a472a;
+        }
+
+        /* Grades Table */
+        .grades-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .grades-table th, .grades-table td {
+            border: 1px solid #ddd;
+            padding: 14px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .grades-table th {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 100%);
+            color: white;
+            font-weight: 700;
+        }
+
+        .grades-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .grades-table tr:hover {
+            background-color: #f0f7f4;
+        }
+
+        /* Behavior Section */
+        .behavior-section {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            background-color: #fff3e0;
+        }
+
+        .behavior-section h3 {
+            color: #e65100;
+            margin-top: 0;
+            border-bottom: 3px solid #ff9800;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .behavior-section p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Print Button */
+        .print-button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .print-button-container button {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .print-button-container button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(211, 47, 47, 0.3);
+        }
+
+        /* Error Message */
+        #error-message {
+            color: #c62828;
+            background-color: #ffcdd2;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 700;
+            display: none;
+            border-left: 5px solid #d32f2f;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+            .search-section, .print-button-container, #error-message {
+                display: none;
+            }
+            .header {
+                border-bottom: 2px solid #1a472a;
+            }
+            #report-card {
+                display: block !important;
+                border: none;
+                background-color: #fff;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .student-info {
+                grid-template-columns: 1fr;
+            }
+            .header-text h1 {
+                font-size: 24px;
+            }
+            .grades-table th, .grades-table td {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="moe_uae_logo.png" alt="وزارة التربية والتعليم" id="school-logo">
+            <div class="header-text">
+                <h1>وزارة التربية والتعليم</h1>
+                <h2>بطاقة التقرير الشهري</h2>
+                <p>مدرسة القيم بنين حلقة ثانية - شهر نوفبر 2025-2026</p>
+            </div>
+        </div>
+
+        <div class="search-section">
+            <label for="student-id">رقم الطالب:</label>
+            <input type="text" id="student-id" placeholder="أدخل رقم الطالب">
+
+            <label for="national-id">رقم الهوية الوطنية (للتأكيد):</label>
+            <input type="text" id="national-id" placeholder="أدخل رقم الهوية الوطنية">
+
+            <button onclick="searchReport()">بحث عن التقرير</button>
+        </div>
+
+        <div id="error-message"></div>
+
+        <div id="report-card">
+            <div class="student-info">
+                <div><strong>اسم الطالب:</strong> <span id="info-name"></span></div>
+                <div><strong>الصف:</strong> <span id="info-class"></span></div>
+            </div>
+
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>المادة</th>
+                        <th>الاختبارات التكوينية</th>
+                        <th>المستوى الأكاديمي</th>
+                        <th>المشاركة</th>
+                        <th>إنجاز المهام</th>
+                        <th>الحضور والكتب</th>
+                    </tr>
+                </thead>
+                <tbody id="grades-body">
+                    <!-- Grades will be inserted here -->
+                </tbody>
+            </table>
+
+            <div class="behavior-section">
+                <h3>التقييم السلوكي العام</h3>
+                <p id="info-behavior"></p>
+            </div>
+
+            <div class="print-button-container">
+                <button onclick="window.print()">طباعة البطاقة</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const DATA_FILE = 'StudentDatamonth.json';
+        let reportData = {};
+
+        // Subject names mapping for display
+        const subjectNames = {
+            islamic_education: 'التربية الإسلامية',
+            arabic_language: 'اللغة العربية',
+            english_language: 'اللغة الإنجليزية',
+            social_studies: 'الدراسات الاجتماعية',
+            mathematics: 'الرياضيات',
+            science: 'العلوم',
+            physical_education: 'التربية البدنية',
+            arts: 'الفنون',
+            music: 'الموسيقى',
+            design_technology: 'التصميم والتكنولوجيا',
+            french_language: 'اللغة الفرنسية',
+            german_language: 'اللغة الألمانية'
+        };
+
+        // Load data from JSON file
+        async function loadData() {
+            try {
+                const response = await fetch(DATA_FILE);
+                if (!response.ok) {
+                    throw new Error(`Failed to load data: ${response.statusText}`);
+                }
+                reportData = await response.json();
+                console.log('Data loaded successfully. Total students: ' + Object.keys(reportData).length);
+            } catch (error) {
+                document.getElementById('error-message').innerText = 'خطأ في تحميل البيانات. يرجى التأكد من وجود ملف ' + DATA_FILE + ' في نفس المجلد.';
+                document.getElementById('error-message').style.display = 'block';
+                console.error(error);
+            }
+        }
+
+        // Search function
+        function searchReport() {
+            const studentId = document.getElementById('student-id').value.trim();
+            const nationalId = document.getElementById('national-id').value.trim();
+            const errorMessage = document.getElementById('error-message');
+            const reportCard = document.getElementById('report-card');
+
+            errorMessage.style.display = 'none';
+            reportCard.style.display = 'none';
+
+            if (!studentId || !nationalId) {
+                errorMessage.innerText = 'الرجاء إدخال رقم الطالب ورقم الهوية الوطنية.';
+                errorMessage.style.display = 'block';
+                return;
+            }
+
+            const searchKey = `${studentId}_${nationalId}`;
+            const studentReport = reportData[searchKey];
+
+            if (studentReport) {
+                displayReport(studentReport);
+            } else {
+                errorMessage.innerText = 'عذراً، لم يتم العثور على تقرير يطابق رقم الطالب ورقم الهوية الوطنية المدخلين.';
+                errorMessage.style.display = 'block';
+            }
+        }
+
+        // Display function
+        function displayReport(report) {
+            document.getElementById('info-name').innerText = report.student_name;
+            document.getElementById('info-class').innerText = report.class_name;
+            document.getElementById('info-behavior').innerText = report.general_behavior;
+
+            const gradesBody = document.getElementById('grades-body');
+            gradesBody.innerHTML = ''; // Clear previous data
+
+            for (const enSubject in report.grades) {
+                const arSubject = subjectNames[enSubject] || enSubject;
+                const grades = report.grades[enSubject];
+                
+                const row = gradesBody.insertRow();
+                row.insertCell().innerText = arSubject;
+                row.insertCell().innerText = grades.formative_exam || 'N/A';
+                row.insertCell().innerText = grades.academic_level || 'N/A';
+                row.insertCell().innerText = grades.participation || 'N/A';
+                row.insertCell().innerText = grades.doing_tasks || 'N/A';
+                row.insertCell().innerText = grades.attending_books || 'N/A';
+            }
+
+            document.getElementById('report-card').style.display = 'block';
+        }
+
+        // Initial data load
+        loadData();
+    </script>
+</body>
+</html>
