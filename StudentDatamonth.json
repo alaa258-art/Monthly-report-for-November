@@ -2351,7 +2351,56 @@
             }
         }
     },
-    "2018000721_784201430959490": {
+    "20250000285_784201410473249": {
+        "student_name": "احمد خالد مهدى حسن لنجاوى",
+        "class_name": "G6-GEN-3L/1",
+        "general_behavior": "ملتزم",
+        "grades": {
+            "islamic_education": {
+                "formative_exam": "20 /20",
+                "academic_level": "A",
+                "participation": "نشط  Active ",
+                "doing_tasks": "في الموعد  on time ",
+                "attending_books": "interested  مهتم"
+            },
+            "arabic_language": {
+                "formative_exam": "22/25",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "english_language": {
+                "formative_exam": "29 / 30",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "social_studies": {
+                "formative_exam": "20/20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "mathematics": {
+                "formative_exam": "20 /20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "science": {
+                "formative_exam": "8/15",
+                "academic_level": "B",
+                "participation": "نشط  Active",
+                "doing_tasks": "لا ينجز Incomplete",
+                "attending_books": "interested  مهتم"
+            }
+        }
+    },
+     "2018000721_784201430959490": {
         "student_name": "احمد منصور السيد ابراهيم السيد يوسف الهاشمى",
         "class_name": "G6-GEN-3L/1",
         "general_behavior": "ملتزم",
@@ -16435,4 +16484,5 @@
             }
         }
     }
+
 }
