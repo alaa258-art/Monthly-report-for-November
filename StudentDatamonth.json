@@ -2408,15 +2408,24 @@
             "islamic_education": {
                 "formative_exam": "20 /20",
                 "academic_level": "A",
+<<<<<<< HEAD
                 "participation": "نشط  Active",
                 "doing_tasks": "في الموعد  on time",
+=======
+                "participation": "نشط  Active ",
+                "doing_tasks": "في الموعد  on time ",
+>>>>>>> 65477214bf2b6c93ec34bc66bbba83587896367f
                 "attending_books": "interested  مهتم"
             },
             "arabic_language": {
                 "formative_exam": "22/25",
                 "academic_level": "A",
                 "participation": "نشط  Active",
+<<<<<<< HEAD
                 "doing_tasks": "متأخرًا late",
+=======
+                "doing_tasks": "في الموعد  on time",
+>>>>>>> 65477214bf2b6c93ec34bc66bbba83587896367f
                 "attending_books": "interested  مهتم"
             },
             "english_language": {
@@ -2430,7 +2439,11 @@
                 "formative_exam": "20/20",
                 "academic_level": "A",
                 "participation": "نشط  Active",
+<<<<<<< HEAD
                 "doing_tasks": "متأخرًا late",
+=======
+                "doing_tasks": "في الموعد  on time",
+>>>>>>> 65477214bf2b6c93ec34bc66bbba83587896367f
                 "attending_books": "interested  مهتم"
             },
             "mathematics": {
@@ -2449,7 +2462,11 @@
             }
         }
     },
+<<<<<<< HEAD
     "2018000721_784201430959490": {
+=======
+     "2018000721_784201430959490": {
+>>>>>>> 65477214bf2b6c93ec34bc66bbba83587896367f
         "student_name": "احمد منصور السيد ابراهيم السيد يوسف الهاشمى",
         "class_name": "G6-GEN-3L/1",
         "general_behavior": "ملتزم",
@@ -16631,4 +16648,5 @@
             }
         }
     }
+
 }
