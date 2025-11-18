@@ -1,4 +1,53 @@
 {
+    "20190006416_784201518493750": {
+        "student_name": "احمد عبدالله محمد على المري",
+        "class_name": "G5-GEN-3L / 1",
+        "general_behavior": "ملتزم",
+        "grades": {
+            "islamic_education": {
+                "formative_exam": "12/20",
+                "academic_level": "C",
+                "participation": "نشط  Active",
+                "doing_tasks": "لا ينجز Incomplete",
+                "attending_books": "interested  مهتم"
+            },
+            "arabic_language": {
+                "formative_exam": "16/ 25",
+                "academic_level": "C",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "english_language": {
+                "formative_exam": "26/40",
+                "academic_level": "C",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "social_studies": {
+                "formative_exam": "11 / 20",
+                "academic_level": "D",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "mathematics": {
+                "formative_exam": "14/20",
+                "academic_level": "B",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "Partially interested  مهتم جزئيًّا"
+            },
+            "science": {
+                "formative_exam": "11/25",
+                "academic_level": "F",
+                "participation": "غير نشط  Inactive",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            }
+        }
+    },
     "20190002905_784201506536487": {
         "student_name": "احمد محمد احمد احمد",
         "class_name": "G5-GEN-3L / 1",
@@ -2347,6 +2396,55 @@
                 "academic_level": "C",
                 "participation": "نشط جزئيًا  Partially",
                 "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            }
+        }
+    },
+    "20250000285_784201410473249": {
+        "student_name": "احمد خالد مهدى حسن لنجاوى",
+        "class_name": "G6-GEN-3L/1",
+        "general_behavior": "ملتزم",
+        "grades": {
+            "islamic_education": {
+                "formative_exam": "20 /20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "arabic_language": {
+                "formative_exam": "22/25",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "interested  مهتم"
+            },
+            "english_language": {
+                "formative_exam": "29 / 30",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "social_studies": {
+                "formative_exam": "20/20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "interested  مهتم"
+            },
+            "mathematics": {
+                "formative_exam": "20 /20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "science": {
+                "formative_exam": "8/15",
+                "academic_level": "B",
+                "participation": "نشط  Active",
+                "doing_tasks": "لا ينجز Incomplete",
                 "attending_books": "interested  مهتم"
             }
         }
@@ -6043,6 +6141,55 @@
                 "academic_level": "C",
                 "participation": "نشط  Active",
                 "doing_tasks": "لا ينجز Incomplete",
+                "attending_books": "interested  مهتم"
+            }
+        }
+    },
+    "2016026629_784201207654837": {
+        "student_name": "احمد بدر احمد محمد التميمي",
+        "class_name": "G7-GEN-3L/1",
+        "general_behavior": "غير ملتزم",
+        "grades": {
+            "islamic_education": {
+                "formative_exam": "10/20",
+                "academic_level": "D",
+                "participation": "غير نشط  Inactive",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "Partially interested  مهتم جزئيًّا"
+            },
+            "arabic_language": {
+                "formative_exam": "6/20",
+                "academic_level": "F",
+                "participation": "غير نشط  Inactive",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "غير مهتم  Not interested"
+            },
+            "english_language": {
+                "formative_exam": "20/40",
+                "academic_level": "B",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "لا ينجز Incomplete",
+                "attending_books": "interested  مهتم"
+            },
+            "social_studies": {
+                "formative_exam": "10 / 20",
+                "academic_level": "D",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "Partially interested  مهتم جزئيًّا"
+            },
+            "mathematics": {
+                "formative_exam": "8/20",
+                "academic_level": "C",
+                "participation": "نشط جزئيًا  Partially",
+                "doing_tasks": "متأخرًا late",
+                "attending_books": "Partially interested  مهتم جزئيًّا"
+            },
+            "science": {
+                "formative_exam": "8 / 15",
+                "academic_level": "D",
+                "participation": "غير نشط  Inactive",
+                "doing_tasks": "متأخرًا late",
                 "attending_books": "interested  مهتم"
             }
         }
@@ -10895,6 +11042,55 @@
                 "participation": "نشط جزئيًا  Partially",
                 "doing_tasks": "لا ينجز Incomplete",
                 "attending_books": "Partially interested  مهتم جزئيًّا"
+            }
+        }
+    },
+    "20180018340_784201246064204": {
+        "student_name": "احمد بن غالب بن اسامه الشريف",
+        "class_name": "G8-GEN / 1",
+        "general_behavior": "ملتزم",
+        "grades": {
+            "islamic_education": {
+                "formative_exam": "19/20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "arabic_language": {
+                "formative_exam": "19/20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "english_language": {
+                "formative_exam": "40 / 40",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "social_studies": {
+                "formative_exam": "18 / 20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
+            },
+            "mathematics": {
+                "formative_exam": "17 / 20",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "لا ينجز Incomplete",
+                "attending_books": "interested  مهتم"
+            },
+            "science": {
+                "formative_exam": "15/15",
+                "academic_level": "A",
+                "participation": "نشط  Active",
+                "doing_tasks": "في الموعد  on time",
+                "attending_books": "interested  مهتم"
             }
         }
     },
